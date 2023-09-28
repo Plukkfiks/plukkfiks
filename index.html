@@ -61,7 +61,9 @@
 <script src="script.js"></script>
 
 <script>
-    const startupSound = new Audio('startup-sound.mp3');
+    const content = document.getElementById('content');
+    const startupAnimation = document.querySelector('.startup-animation');
+    const startupSound = new Audio('startup-sound.mp3'); // Sti til lydfilen
 
     document.addEventListener('DOMContentLoaded', () => {
         startupSound.oncanplaythrough = () => {
@@ -69,10 +71,10 @@
         };
 
         setTimeout(() => {
-            const content = document.getElementById('content');
             content.classList.add('show');
             content.addEventListener('animationend', () => {
-                document.querySelector('.startup-animation').style.display = 'none';
+                startupAnimation.style.display = 'none'; // Skjul oppstartsanimasjonen
+                startupSound.pause(); // Pause lyden
             });
         }, 5000);
     });

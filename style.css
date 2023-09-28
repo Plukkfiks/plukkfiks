@@ -32,7 +32,7 @@ body {
 .articles-container .article {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Legg til gjennomsiktig bakgrunnsfarge */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
