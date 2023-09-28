@@ -1,17 +1,4 @@
 body {
-    background-image: url('https://media.giphy.com/media/3oz8xsUEU0gNcGr2Pm/source.gif');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    transition: background-image 1s ease-in-out; /* Legg til smooth overgang ved lasting av siden */
-}
 
 .container {
     padding: 20px;

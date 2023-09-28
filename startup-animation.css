@@ -1,32 +1,78 @@
-@keyframes custom-startup-animation {
-    0% {
-        transform: scale(0) rotateX(360deg);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1) rotateX(0deg);
-        opacity: 1;
-    }
+body {
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Legg til transparant bakgrunn i container */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Legg til transparant ramme i container */
+    border-radius: 10px; /* Runde hjørner */
 }
 
-.startup-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.articles-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black; /* Endre bakgrunnsfarge etter behov */
-    animation: custom-startup-animation 5s ease forwards; /* Endre varighet etter behov */
+    justify-content: space-between;
+    margin-top: 20px; /* Juster etter behov */
 }
 
-.startup-animation img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%; /* Runde kanter for logoen */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glødende effekt */
+.articles-container .article {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Resten av CSS for andre elementer på nettsiden */
+.articles-container .article h3 {
+    margin-top: 0;
+}
+
+.articles-container .article p {
+    margin-bottom: 10px;
+}
+
+.articles-container .article button {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.articles-container .article button:hover {
+    background-color: #8A2BE2;
+}
+
+.articles-container .article button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #8A2BE2;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+
+
+.articles-section .article:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05); /* Skalering for 3D-effekt */
+}
+
+.social-links li a {
+    background-color: rgba(0, 0, 0, 0.5); /* Legg til transparanse for sosiale medier */
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s, transform 0.3s; /* Legg til overgangseffekt for boks-skyggen og transformasjon */
+}
+
+.social-links li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05); /* Skalering for 3D-effekt */
+}

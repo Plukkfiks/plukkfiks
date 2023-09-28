@@ -6,14 +6,8 @@
     <title>Velkommen til Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="index-style.css">
-    <link rel="stylesheet" type="text/css" href="startup-animation.css">
-
 </head>
 <body>
-
-<section class="startup-animation">
-    <img src="https://th.bing.com/th/id/OIP.Zekh8TG1gmQKSxQvLZ-iqwHaHa?pid=ImgDet&rs=1" alt="Logo">
-</section>
 
 <main id="content" class="fade-in">
     <section class="intro-section">
@@ -60,76 +54,6 @@
 </footer>
 
 <script src="script.js"></script>
-
-<script>
-    let isContentVisible = false;
-
-    function toggleContent() {
-        const contentSection = document.getElementById('content');
-        contentSection.classList.toggle('show', !isContentVisible);
-
-        const shopSection = document.getElementById('shop-section');
-        const contactSection = document.getElementById('contact-section');
-        const categoriesSection = document.getElementById('categories');
-
-        shopSection.classList.toggle('show', isContentVisible);
-        contactSection.classList.toggle('show', isContentVisible);
-        categoriesSection.classList.toggle('show', isContentVisible);
-
-        const button = document.querySelector('.scroll-button button');
-        button.classList.toggle('clicked', isContentVisible);
-        isContentVisible = !isContentVisible;
-    }
-
-    function redirectToShop() {
-        // Implement your redirection to the shop here
-        console.log('Redirecting to the shop...');
-    }
-
-    function showContactInfo() {
-        const contactInfo = document.getElementById('contact-info');
-        contactInfo.style.display = 'block';
-    }
-
-    function contactViaEmail() {
-        // Implement your email contact functionality here
-        console.log('Contacting via email...');
-    }
-
-    function contactViaSMS() {
-        // Implement your SMS contact functionality here
-        console.log('Contacting via SMS...');
-    }
-
-    function showCategories() {
-        const categories = document.getElementById('categories');
-        categories.style.display = 'block';
-    }
-
-    function redirectToProducts() {
-        window.location.href = "produkter.html";
-    }
-
-    function redirectToArticle(articleUrl) {
-        window.location.href = articleUrl;
-    }
-
-    // Etter 5 sekunder, vis innholdet med en fade-in-animasjon
-    setTimeout(() => {
-        content.classList.add('show');
-        content.addEventListener('animationend', () => {
-            startupAnimation.style.display = 'none'; // Skjul oppstartsanimasjonen
-        });
-    }, 5000);
-
-    // Legg til en klikk-lytter for å spille av lyden når brukeren klikker hvor som helst på siden
-    document.addEventListener('click', () => {
-        if (!soundPlayed) {
-            startupSound.play();
-            soundPlayed = true;
-        }
-    });
-</script>
 
 </body>
 </html>

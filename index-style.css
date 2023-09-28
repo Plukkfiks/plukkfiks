@@ -1,19 +1,4 @@
-    body {
-        background-image: url('https://media.giphy.com/media/3oz8xsUEU0gNcGr2Pm/source.gif');
-        background-color: transparent; /* Endret til gjennomsiktig bakgrunn */
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        margin: 0;
-        padding: 0;
-        transition: background-color 0.3s;
-    }
-
-    .container {
-        padding: 20px;
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-    }
+body {
 
 .container {
     padding: 20px;
@@ -64,6 +49,11 @@
     outline: none;
     box-shadow: 0 0 5px #8A2BE2;
 }
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 
 
 
@@ -85,8 +75,4 @@
 .social-links li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     transform: scale(1.05); /* Skalering for 3D-effekt */
-}
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
 }
