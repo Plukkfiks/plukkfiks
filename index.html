@@ -6,13 +6,10 @@
     <title>Velkommen til Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="index-style.css">
-
-    <!-- Legg til CSS for oppstartsanimasjon -->
     <link rel="stylesheet" type="text/css" href="startup-animation.css">
 </head>
 <body>
 
-<!-- Oppstartsanimasjon -->
 <section class="startup-animation">
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6e0b072897469.5bf6e79950d23.gif" alt="Startup Animation">
 </section>
@@ -61,22 +58,19 @@
 
 <script src="script.js"></script>
 
-<!-- Oppdater stien til din oppstartlyd -->
 <script>
-    const startupSound = new Audio('startup-sound.mp3'); // Sti til lydfilen
+    const startupSound = new Audio('startup-sound.mp3');
 
     document.addEventListener('DOMContentLoaded', () => {
-        // Spill av lyden når dokumentet er ferdig lastet inn
         startupSound.oncanplaythrough = () => {
             startupSound.play();
         };
 
-        // Etter 5 sekunder, vis innholdet med en fade-in-animasjon
         setTimeout(() => {
             const content = document.getElementById('content');
             content.classList.add('show');
             content.addEventListener('animationend', () => {
-                document.querySelector('.startup-animation').style.display = 'none'; // Skjul oppstartsanimasjonen
+                document.querySelector('.startup-animation').style.display = 'none';
             });
         }, 5000);
     });

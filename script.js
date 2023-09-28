@@ -68,15 +68,25 @@ function redirectToArticle(articleUrl) {
     window.location.href = articleUrl;
 }
 document.addEventListener('DOMContentLoaded', () => {
-    // Spill av lyden når dokumentet er ferdig lastet inn
-    playStartupSound();
+    const content = document.getElementById('content');
+    const startupAnimation = document.querySelector('.startup-animation');
+    const startupSound = new Audio('startup-sound.mp3'); // Sti til lydfilen
+    let soundPlayed = false;
+
+    // Etter 5 sekunder, vis innholdet med en fade-in-animasjon
+    setTimeout(() => {
+        content.classList.add('show');
+        content.addEventListener('animationend', () => {
+            startupAnimation.style.display = 'none'; // Skjul oppstartsanimasjonen
+        });
+    }, 5000);
+
+    // Legg til en klikk-lytter for å spille av lyden når brukeren klikker hvor som helst på siden
+    document.addEventListener('click', () => {
+        if (!soundPlayed) {
+            startupSound.play();
+            soundPlayed = true;
+        }
+    });
 });
 
-function playStartupSound() {
-    const startupSound = new Audio('startup-sound.mp3'); // Sti til lydfilen
-
-    // Sjekk om lydfilen er lastet før vi prøver å spille den
-    startupSound.oncanplaythrough = () => {
-        startupSound.play();
-    };
-}
