@@ -1,90 +1,16 @@
 body {
-    background-color: #000000; /* Endre til svart bakgrunnsfarge */
-    color: #ffffff; /* Endre til hvit tekstfarge */
-}
-
-.container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center; /* Sentrer innholdet */
-}
-
-.intro-section, .articles-section {
-    margin-bottom: 20px;
-}
-
-/* ... (tidligere CSS-stiler) ... */
-
-/* Ny stil for footer */
-footer {
-    background-color: #000000; /* Svart bakgrunnsfarge for footer */
-    padding: 20px;
-    text-align: center;
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer .social-links li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-footer .social-links li:last-child {
-    margin-right: 0;
-}
-.articles-section .article {
-    border: 1px solid #ffffff; /* Legg til en hvit ramme */
-    border-radius: 10px; /* Legg til hjørnerammer */
-    /* Annen CSS-stil for article-elementet */
-}
-
-footer {
-    border-top: 1px solid #ffffff; /* Legg til en hvit ramme øverst i footer */
-}
-/* Animasjon for artikler */
-.articles-section .article:hover {
-    transform: scale(1.05); /* Skalér opp ved hover for 3D-effekt */
-    transition: transform 0.3s;
-}
-
-/* Animasjon for sosiale medier */
-footer .social-links li a:hover {
-    transform: scale(1.1); /* Skalér opp ved hover for 3D-effekt */
-    transition: transform 0.3s;
-}
-.articles-section .article {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
-    transition: box-shadow 0.3s; /* Legg til overgangseffekt for boks-skyggen */
-}
-
-footer .social-links li a {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
-    /* Annen CSS-stil for a-elementet */
-}
-body {
     background-image: url('https://media.giphy.com/media/3oz8xsUEU0gNcGr2Pm/source.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; /* Juster størrelsen slik at bildet dekker hele bakgrunnen */
-    footer {
-        background-color: #000000; /* Svart bakgrunnsfarge for footer */
-        padding: 20px;
-        text-align: center;
-        border-top: 1px solid #ffffff; /* Legg til en hvit ramme øverst i footer */
-        margin-top: 20px; /* Legg til en margin øverst på footer for avstand */
-    }
+    background-size: cover;
+    color: #ffffff;
+}
 
+/* Fjerne tidligere definerte farger og stiler for footer */
+footer {
+    background: none;
+    border: none;
+}
 
 footer .social-links ul {
     list-style: none;
@@ -95,23 +21,22 @@ footer .social-links ul {
 footer .social-links li {
     display: inline-block;
     margin-right: 10px;
-    border: 1px solid #ffffff; /* Legg til en hvit ramme rundt hver sosiale medieikon */
-    padding: 8px; /* Legg til litt padding for å gjøre rammen tydelig */
-    border-radius: 5px; /* Legg til hjørnerammer */
+    border: 1px solid #ffffff;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 footer .social-links li:last-child {
     margin-right: 0;
 }
 
-    /* Legg til opphavsrett og kontaktdetaljer */
-    footer .copyright-info {
-        font-size: 14px;
-        color: #ffffff;
-    }
+footer .copyright-info {
+    font-size: 14px;
+    color: #ffffff;
+}
 
-    footer .contact-info {
-        font-size: 14px;
-        color: #ffffff;
-        margin-top: 10px; /* Legg til mellomrom mellom opphavsrett og kontaktdetaljer */
-    }
+footer .contact-info {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+}
