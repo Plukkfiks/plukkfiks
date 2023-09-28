@@ -77,3 +77,54 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; /* Juster størrelsen slik at bildet dekker hele bakgrunnen */
+    footer {
+        background-color: #000000; /* Svart bakgrunnsfarge for footer */
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #ffffff; /* Legg til en hvit ramme øverst i footer */
+        margin-top: 20px; /* Legg til en margin øverst på footer for avstand */
+    }
+
+    footer .social-links {
+        margin-bottom: 20px; /* Legg til mellomrom mellom sosiale medier og tekst */
+    }
+
+    footer .social-links p {
+        margin-bottom: 10px; /* Legg til mellomrom under teksten "Sosiale Medier:" */
+    }
+
+    footer .social-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .social-links li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    footer .social-links li:last-child {
+        margin-right: 0;
+    }
+
+    /* Legg til animasjon for sosiale medier */
+    footer .social-links li a {
+        transition: transform 0.3s;
+    }
+
+    footer .social-links li a:hover {
+        transform: scale(1.1); /* Skalér opp ved hover for 3D-effekt */
+    }
+
+    /* Legg til opphavsrett og kontaktdetaljer */
+    footer .copyright-info {
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    footer .contact-info {
+        font-size: 14px;
+        color: #ffffff;
+        margin-top: 10px; /* Legg til mellomrom mellom opphavsrett og kontaktdetaljer */
+    }
