@@ -72,3 +72,8 @@ footer .social-links li a {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
     /* Annen CSS-stil for a-elementet */
 }
+body {
+    background-image: url('https://media.giphy.com/media/3oz8xsUEU0gNcGr2Pm/source.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Juster størrelsen slik at bildet dekker hele bakgrunnen */
