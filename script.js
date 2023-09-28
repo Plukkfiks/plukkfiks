@@ -24,3 +24,4 @@ function redirectToVipps() {
     const vippURL = `vipps://vipp?amount=${vippSum}&receiverId=${vippNummer}&message=Opptenningsved`;
     window.location.href = vippURL;
 }
+

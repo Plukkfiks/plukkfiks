@@ -19,23 +19,13 @@
         <section id="product">
             <h2>Opptenningsved</h2>
             <p>Pris: 80 kr per pose</p>
-            <button onclick="redirectToVipps()">Kjøp med Vipps</button>
+            <p>Betal 80 kr med Vipps til nummer: <strong>94193690</strong></p>
+            <button onclick="redirectToVipps()">Betal med Vipps</button>
         </section>
     </div>
 </main>
 
 <script src="script.js"></script>
-
-<script>
-    function redirectToVipps() {
-        const vippSum = 80;  // Fast pris på 80 kr
-        const vippNummer = '94193690';  // Ditt Vipps-nummer
-
-
-    const vippURL = `vipps://vipp?amount=${vippSum}&receiverId=${vippNummer}&message=Opptenningsved`;
-    window.location.href = vippURL;
-}
-</script>
 
 </body>
 </html>
