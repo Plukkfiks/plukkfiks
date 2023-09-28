@@ -23,15 +23,47 @@ body {
     border-radius: 10px; /* Runde hjørner */
 }
 
-.articles-section .article {
-    border: 2px solid rgba(255, 255, 255, 0.5); /* Legg til transparant ramme rundt artikler */
-    border-radius: 10px; /* Runde hjørner */
-    padding: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for "glow" effekt */
-    transition: box-shadow 0.3s, transform 0.3s; /* Legg til overgangseffekt for boks-skyggen og transformasjon */
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Juster etter behov */
 }
+
+.articles-container .article {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articles-container .article h3 {
+    margin-top: 0;
+}
+
+.articles-container .article p {
+    margin-bottom: 10px;
+}
+
+.articles-container .article button {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.articles-container .article button:hover {
+    background-color: #8A2BE2;
+}
+
+.articles-container .article button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #8A2BE2;
+}
+
 
 .articles-section .article:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
