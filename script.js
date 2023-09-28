@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const content = document.getElementById('content');
     const startupAnimation = document.querySelector('.startup-animation');
-    const startupSound = new Audio('startup-sound.mp3'); // Endre til riktig lydfil
+    const startupSound = new Audio('startup-sound.mp3'); // Endre til din lydfilssti
 
     // Spill oppstartslyden
     startupSound.oncanplaythrough = () => {
@@ -10,11 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start oppstartsanimasjonen
     setTimeout(() => {
-        startupAnimation.style.animation = 'fadeOut 1s ease forwards';
-        content.style.animation = 'fadeInContent 2s ease forwards';
+        startupAnimation.style.animation = 'custom-startup-animation 5s ease forwards';
         startupAnimation.addEventListener('animationend', () => {
             startupAnimation.style.display = 'none'; // Skjul oppstartsanimasjonen
-            startupSound.pause(); // Pause lyden
+            // Pause lyden etter at animasjonen er ferdig
+            startupSound.pause();
         });
-    }, 5000); // Endre til riktig varighet for din animasjon
+    }, 100); // Endre til riktig varighet for din animasjon
 });
