@@ -1,68 +1,24 @@
-https://th.bing.com/th/id/OIP.CPX70IBaP52q0mMFIXRoswHaFj?pid=ImgDet&rs=1
-
-.articles-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* Juster etter behov */
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.CPX70IBaP52q0mMFIXRoswHaFj?pid=ImgDet&rs=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.articles-container .article {
-    flex: 1;
+.container {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
 }
 
-.articles-container .article h3 {
-    margin-top: 0;
-}
+/* Additional styles based on your recent requests */
+/* Add your custom styles here */
 
-.articles-container .article p {
-    margin-bottom: 10px;
-}
-
-.articles-container .article button {
-    padding: 10px 20px;
-    background-color: #4B0082;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.articles-container .article button:hover {
-    background-color: #8A2BE2;
-}
-
-.articles-container .article button:focus {
-    outline: none;
-    box-shadow: 0 0 5px #8A2BE2;
-}
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-
-
-
-.articles-section .article:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-    transform: scale(1.05); /* Skalering for 3D-effekt */
-}
-
-.social-links li a {
-    background-color: rgba(0, 0, 0, 0.5); /* Legg til transparanse for sosiale medier */
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 8px;
-    text-align: left;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s, transform 0.3s; /* Legg til overgangseffekt for boks-skyggen og transformasjon */
-}
-
-.social-links li a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    transform: scale(1.05); /* Skalering for 3D-effekt */
-}
