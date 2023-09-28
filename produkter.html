@@ -31,9 +31,10 @@
         const vippSum = 80;  // Fast pris på 80 kr
         const vippNummer = '94193690';  // Ditt Vipps-nummer
 
-        const vippURL = `https://www.vipps.no/e-commerce/#/preapproved?recipientId=${vippNummer}&amount=${vippSum}&message=Opptenningsved`;
-        window.location.href = vippURL;
-    }
+
+    const vippURL = `vipps://vipp?amount=${vippSum}&receiverId=${vippNummer}&message=Opptenningsved`;
+    window.location.href = vippURL;
+}
 </script>
 
 </body>
