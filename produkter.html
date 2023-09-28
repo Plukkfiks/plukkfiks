@@ -3,8 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Våre Produkter - Plukkfiks</title>
+    <title>Plukkfiks - Våre Produkter</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Legg til spesifikke stiler for produktet */
+        .product-card {
+            border-radius: 10px; /* Runde hjørner */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Glow effekt */
+            transform: translateZ(50px); /* 3D effekt */
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateZ(100px); /* 3D effekt ved hover */
+        }
+    </style>
 </head>
 <body>
 
@@ -16,16 +29,33 @@
 
 <main>
     <div class="container">
-        <section id="product">
+        <section class="product-card">
             <h2>Opptenningsved</h2>
-            <p>Pris: 80 kr per pose</p>
-            <p>Betal 80 kr med Vipps til nummer: <strong>94193690</strong></p>
-            <button onclick="redirectToVipps()">Betal med Vipps</button>
+            <button onclick="redirectToVipps()" class="click-button">Kjøp for 80 kr</button>
         </section>
     </div>
 </main>
 
+<footer>
+    <div class="container">
+        <p class="contact-info">Kontakt oss: <a href="mailto:plukkfiksub@gmail.com">plukkfiksub@gmail.com</a></p>
+    </div>
+</footer>
+
+<div class="background-gif">
+    <img src="https://gifdb.com/images/high/anime-bamboo-forest-background-5rx5lwev45pcnpaf.gif" alt="Background Gif">
+</div>
+
 <script src="script.js"></script>
+
+<script>
+    function redirectToVipps() {
+        const vippSum = 80;
+        const vippNummer = '94193690';
+        const vippURL = `vipps://vipp?amount=${vippSum}&receiverId=${vippNummer}&message=Opptenningsved`;
+        window.location.href = vippURL;
+    }
+</script>
 
 </body>
 </html>
