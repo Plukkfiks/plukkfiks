@@ -43,3 +43,32 @@ footer .social-links li {
 footer .social-links li:last-child {
     margin-right: 0;
 }
+.articles-section .article {
+    border: 1px solid #ffffff; /* Legg til en hvit ramme */
+    border-radius: 10px; /* Legg til hjørnerammer */
+    /* Annen CSS-stil for article-elementet */
+}
+
+footer {
+    border-top: 1px solid #ffffff; /* Legg til en hvit ramme øverst i footer */
+}
+/* Animasjon for artikler */
+.articles-section .article:hover {
+    transform: scale(1.05); /* Skalér opp ved hover for 3D-effekt */
+    transition: transform 0.3s;
+}
+
+/* Animasjon for sosiale medier */
+footer .social-links li a:hover {
+    transform: scale(1.1); /* Skalér opp ved hover for 3D-effekt */
+    transition: transform 0.3s;
+}
+.articles-section .article {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
+    transition: box-shadow 0.3s; /* Legg til overgangseffekt for boks-skyggen */
+}
+
+footer .social-links li a {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
+    /* Annen CSS-stil for a-elementet */
+}
