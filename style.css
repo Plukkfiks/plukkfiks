@@ -85,37 +85,24 @@ body {
         margin-top: 20px; /* Legg til en margin øverst på footer for avstand */
     }
 
-    footer .social-links {
-        margin-bottom: 20px; /* Legg til mellomrom mellom sosiale medier og tekst */
-    }
 
-    footer .social-links p {
-        margin-bottom: 10px; /* Legg til mellomrom under teksten "Sosiale Medier:" */
-    }
+footer .social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    footer .social-links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+footer .social-links li {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ffffff; /* Legg til en hvit ramme rundt hver sosiale medieikon */
+    padding: 8px; /* Legg til litt padding for å gjøre rammen tydelig */
+    border-radius: 5px; /* Legg til hjørnerammer */
+}
 
-    footer .social-links li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    footer .social-links li:last-child {
-        margin-right: 0;
-    }
-
-    /* Legg til animasjon for sosiale medier */
-    footer .social-links li a {
-        transition: transform 0.3s;
-    }
-
-    footer .social-links li a:hover {
-        transform: scale(1.1); /* Skalér opp ved hover for 3D-effekt */
-    }
+footer .social-links li:last-child {
+    margin-right: 0;
+}
 
     /* Legg til opphavsrett og kontaktdetaljer */
     footer .copyright-info {
