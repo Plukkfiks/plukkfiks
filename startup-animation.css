@@ -4,10 +4,14 @@ body, html {
 }
 
 .startup-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     background-color: black; /* Bytt ut med ønsket bakgrunnsfarge */
 }
 
