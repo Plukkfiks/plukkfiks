@@ -1,7 +1,20 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.startup-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black; /* Bytt ut med ønsket bakgrunnsfarge */
+}
+
 .startup-animation img {
     max-width: 100%;
     height: auto;
-    animation: fadeIn 1s ease forwards;
+    animation: fadeIn 4s ease forwards, fadeOut 1s ease forwards;
 }
 
 @keyframes fadeIn {
