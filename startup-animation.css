@@ -1,16 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
 .startup-animation {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Sikrer at animasjonen er på toppen */
 }
 
 .startup-animation img {
     max-width: 100%;
 }
 
-/* Legg til en fade-out-animasjon på slutten av oppstartsanimasjonen */
 @keyframes fadeOut {
     0% {
         opacity: 1;

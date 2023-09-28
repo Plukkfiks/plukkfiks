@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
-<section class="startup-animation">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6e0b072897469.5bf6e79950d23.gif" alt="Startup Animation">
-</section>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velkommen til Plukkfiks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="index-style.css">
+
+    <!-- Legg til CSS for oppstartsanimasjon -->
+    <link rel="stylesheet" type="text/css" href="startup-animation.css">
 </head>
 <body>
 
-<main>
+<!-- Oppstartsanimasjon -->
+<section class="startup-animation">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6e0b072897469.5bf6e79950d23.gif" alt="Startup Animation">
+</section>
+
+<main id="content" class="fade-in">
     <section class="intro-section">
         <div class="container">
             <h2>Utforsk Opptenningsved med Plukkfiks</h2>
             <p>Finn kvalitetsopptenningsved og lær hvordan den produseres.</p>
-            <button onclick="redirectToProducts()">Se Produkter</button>
+            <button onclick="redirectToProducts()" class="click-button">Se Produkter</button>
         </div>
     </section>
 
@@ -27,13 +32,13 @@
             <div class="article">
                 <h3>Hvordan produserer vi opptenningsved?</h3>
                 <p>Utforsk produksjonsprosessen for våre kvalitetsopptenningsved.</p>
-                <button onclick="redirectToArticle('produksjonsprosessen.html')">Les mer</button>
+                <button onclick="redirectToArticle('produksjonsprosessen.html')" class="click-button">Les mer</button>
             </div>
 
             <div class="article">
                 <h3>Hvordan investerer vi?</h3>
                 <p>Finn ut hvordan vi investerer og hva vi investerer i hos Plukkfiks.</p>
-                <button onclick="redirectToArticle('investering.html')">Les mer</button>
+                <button onclick="redirectToArticle('investering.html')" class="click-button">Les mer</button>
             </div>
         </div>
     </section>
@@ -53,6 +58,29 @@
         <p class="contact-info">Kontakt oss: <a href="mailto:plukkfiksub@gmail.com">plukkfiksub@gmail.com</a></p>
     </div>
 </footer>
+
+<script src="script.js"></script>
+
+<!-- Oppdater stien til din oppstartlyd -->
+<script>
+    const startupSound = new Audio('startup-sound.mp3'); // Sti til lydfilen
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Spill av lyden når dokumentet er ferdig lastet inn
+        startupSound.oncanplaythrough = () => {
+            startupSound.play();
+        };
+
+        // Etter 5 sekunder, vis innholdet med en fade-in-animasjon
+        setTimeout(() => {
+            const content = document.getElementById('content');
+            content.classList.add('show');
+            content.addEventListener('animationend', () => {
+                document.querySelector('.startup-animation').style.display = 'none'; // Skjul oppstartsanimasjonen
+            });
+        }, 5000);
+    });
+</script>
 
 </body>
 </html>
