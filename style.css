@@ -1,152 +1,17 @@
-body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s;
+/* CSS-stiler som er tidligere definert i style.css */
+/* ... (Tidligere stiler) ... */
+
+/* Ny CSS for gjennomsiktig bakgrunn og svarte rammer */
+.social-links li a {
+    background-color: rgba(34, 34, 34, 0.7); /* Delvis gjennomsiktig svart bakgrunn */
+    border: 1px solid #000; /* Legg til en svart kantlinje */
+    color: #ffffff; /* Endre tekstfargen til hvit */
+    /* Annen CSS-stil for a-elementet */
 }
 
-.container {
-    padding: 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.scroll-button {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.scroll-button button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.scroll-button button:hover {
-    background-color: #444;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-}
-
-.scroll-button button.clicked::after {
-    content: "Se mindre";
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.fade-in.show {
-    opacity: 1;
-}
-
-#shop-section,
-#contact-section,
-#categories {
-    display: none;
-    padding: 20px 0;
-}
-
-#shop-section.show,
-#contact-section.show,
-#categories.show {
-    display: block;
-}
-
-#categories ul {
-    list-style: none;
-    padding: 0;
-}
-
-#categories ul li {
-    margin-bottom: 10px;
-}
-
-#categories ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#categories ul li a:hover {
-    text-decoration: underline;
-}
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-    padding-top: 60px;
-}
-
-.popup-content {
-    position: relative;
-    margin: auto;
-    padding: 0;
-    max-width: 700px;
-    text-align: center;
-}
-
-.popup-content img {
-    width: 100%;
-    max-width: 700px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}/* CSS for hover-effekt */
- .hover-effect:hover {
-     opacity: 0.7;
-     transition: opacity 0.3s;
- }
-/* CSS for glow-effekt og hover-effekt */
-.hover-effect:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
-
-.glow-effect {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-    transition: box-shadow 0.3s;
-}
-
-.glow-effect:hover {
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
-}
-body {
-    background-color: #2c3e50; /* Mørkegrå bakgrunnsfarge */
-    color: #ecf0f1; /* Lys tekstfarge */
-}
-
-.container {
-    background-color: #8e44ad; /* Lilla hovedfarge */
-}
-body {
-    background-color: #2c3e50; /* Mørkegrå bakgrunnsfarge */
-    color: #ecf0f1; /* Lys tekstfarge */
-}
-
-.container {
-    background-color: #8e44ad; /* Lilla hovedfarge */
+.articles-section .article {
+    background-color: rgba(34, 34, 34, 0.7); /* Delvis gjennomsiktig svart bakgrunn */
+    border: 1px solid #000; /* Legg til en svart kantlinje */
+    color: #ffffff; /* Endre tekstfargen til hvit */
+    /* Annen CSS-stil for article-elementet */
 }
