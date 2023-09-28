@@ -49,3 +49,34 @@ function redirectToProducts() {
 function redirectToArticle(articleUrl) {
     window.location.href = articleUrl;
 }
+function playClickSound() {
+    const clickSound = new Audio('click-sound.mp3'); // Sti til lydfilen
+
+    // Sjekk om lydfilen er lastet før vi prøver å spille den
+    clickSound.oncanplaythrough = () => {
+        clickSound.play();
+    };
+}
+
+function redirectToProducts() {
+    playClickSound();
+    window.location.href = "produkter.html";
+}
+
+function redirectToArticle(articleUrl) {
+    playClickSound();
+    window.location.href = articleUrl;
+}
+document.addEventListener('DOMContentLoaded', () => {
+    // Spill av lyden når dokumentet er ferdig lastet inn
+    playStartupSound();
+});
+
+function playStartupSound() {
+    const startupSound = new Audio('startup-sound.mp3'); // Sti til lydfilen
+
+    // Sjekk om lydfilen er lastet før vi prøver å spille den
+    startupSound.oncanplaythrough = () => {
+        startupSound.play();
+    };
+}

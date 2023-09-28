@@ -1,0 +1,26 @@
+.startup-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.startup-animation img {
+    max-width: 100%;
+}
+
+/* Legg til en fade-out-animasjon på slutten av oppstartsanimasjonen */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.startup-animation {
+    animation: fadeOut 5s forwards; /* Varighet: 5 sekunder, behold sluttstatus */
+}

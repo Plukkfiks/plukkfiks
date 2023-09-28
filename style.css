@@ -8,16 +8,47 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Juster høyden til viewport-høyde */
+    height: 100vh;
     margin: 0;
+    transition: background-image 1s ease-in-out; /* Legg til smooth overgang ved lasting av siden */
 }
 
-/* ... (tidligere stiler) ... */
-
-footer {
-    background: none;
-    border: none;
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Legg til transparant bakgrunn i container */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Legg til transparant ramme i container */
+    border-radius: 10px; /* Runde hjørner */
 }
 
-/* ... (tidligere stiler) ... */
+.articles-section .article {
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Legg til transparant ramme rundt artikler */
+    border-radius: 10px; /* Runde hjørner */
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for "glow" effekt */
+    transition: box-shadow 0.3s, transform 0.3s; /* Legg til overgangseffekt for boks-skyggen og transformasjon */
+}
+
+.articles-section .article:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05); /* Skalering for 3D-effekt */
+}
+
+.social-links li a {
+    background-color: rgba(0, 0, 0, 0.5); /* Legg til transparanse for sosiale medier */
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s, transform 0.3s; /* Legg til overgangseffekt for boks-skyggen og transformasjon */
+}
+
+.social-links li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05); /* Skalering for 3D-effekt */
+}
