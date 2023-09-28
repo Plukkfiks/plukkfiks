@@ -1,17 +1,45 @@
-/* CSS-stiler for startsiden som er tidligere definert i index-style.css */
-/* ... (Tidligere stiler) ... */
-
-/* Ny CSS for gjennomsiktig bakgrunn og svarte rammer */
-.social-links li a {
-    background-color: rgba(34, 34, 34, 0.7); /* Delvis gjennomsiktig svart bakgrunn */
-    border: 1px solid #000; /* Legg til en svart kantlinje */
-    color: #ffffff; /* Endre tekstfargen til hvit */
-    /* Annen CSS-stil for a-elementet */
+body {
+    background-color: #000000; /* Endre til svart bakgrunnsfarge */
+    color: #ffffff; /* Endre til hvit tekstfarge */
 }
 
-.articles-section .article {
-    background-color: rgba(34, 34, 34, 0.7); /* Delvis gjennomsiktig svart bakgrunn */
-    border: 1px solid #000; /* Legg til en svart kantlinje */
-    color: #ffffff; /* Endre tekstfargen til hvit */
-    /* Annen CSS-stil for article-elementet */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Sentrer innholdet */
+}
+
+.intro-section, .articles-section {
+    margin-bottom: 20px;
+}
+
+/* ... (tidligere CSS-stiler) ... */
+
+/* Ny stil for footer */
+footer {
+    background-color: #000000; /* Svart bakgrunnsfarge for footer */
+    padding: 20px;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .social-links li:last-child {
+    margin-right: 0;
 }
