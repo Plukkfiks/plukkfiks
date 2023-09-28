@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #03A9F4;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header button:focus {
+    outline: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.article-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.article-section h2 {
+    color: #03A9F4;
+}
+
+.article-section p {
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 12px;
+}

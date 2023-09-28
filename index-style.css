@@ -1,0 +1,86 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-section, .articles-section {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+     background-color: #222;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        text-align: left;
+        box-shadow: 0 0 8px rgba(75, 0, 130, 0.5); /* Legger til en boks-skygge med indigo farge */
+        transition: box-shadow 0.3s; /* Legger til overgangseffekt for boks-skyggen */
+}
+
+.social-links li a:hover {
+     box-shadow: 0 0 10px rgba(75, 0, 130, 0.7); /* Glødende effekt ved hover */
+}
+
+/* New style for articles */
+
+.articles-section .article {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(75, 0, 130, 0.5); /* Legger til en boks-skygge med indigo farge */
+    transition: box-shadow 0.3s; /* Legger til overgangseffekt for boks-skyggen */
+}
+
+.articles-section .article:hover {
+    box-shadow: 0 0 20px rgba(75, 0, 130, 0.7); /* Glødende effekt ved hover */
+}
+
+.articles-section .article h3 {
+    margin-top: 0;
+}
+
+.articles-section .article p {
+    margin-bottom: 10px;
+}
+
+.articles-section .article button {
+    padding: 10px 20px;
+    background-color: #4B0082; /* Indigo farge */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.articles-section .article button:hover {
+    background-color: #8A2BE2; /* Mer levende indigo farge */
+}
+
+.articles-section .article button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #8A2BE2;
+}

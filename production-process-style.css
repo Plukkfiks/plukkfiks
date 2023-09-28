@@ -1,0 +1,36 @@
+/* production-process-style.css */
+
+body {
+    background-color: #f0f0f0; /* Lys bakgrunnsfarge */
+    color: #333; /* Mørk tekstfarge */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article-section {
+    background-color: #fff; /* Hvit bakgrunnsfarge for artikkel */
+    padding: 20px;
+    border-radius: 10px; /* Runde hjørner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+}
+
+.back-button {
+    background-color: #ff0000; /* Rød bakgrunnsfarge */
+    color: #fff; /* Hvit tekstfarge */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Overgangseffekt */
+}
+
+.back-button:hover {
+    background-color: #cc0000; /* Endret farge ved hover */
+}
+
+/* Legg til eventuelle andre stiler for produksjonsprosessen her */

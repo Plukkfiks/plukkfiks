@@ -1,0 +1,14 @@
+/* CSS for Opptenningsved-kategorien */
+#opptenningsved {
+    background-color: #4c0000; /* Mørkerød bakgrunnsfarge */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#opptenningsved:hover {
+    background-color: #660000; /* Endret mørkerød bakgrunnsfarge ved hover */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Glow-effekt */
+}
