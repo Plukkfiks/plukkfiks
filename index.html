@@ -75,9 +75,23 @@
             content.addEventListener('animationend', () => {
                 startupAnimation.style.display = 'none'; // Skjul oppstartsanimasjonen
                 startupSound.pause(); // Pause lyden
+                fadeOutAudio(startupSound);
             });
         }, 5000);
     });
+
+    // Funksjon for å fade ut lyden
+    function fadeOutAudio(audio) {
+        const fadeOutInterval = setInterval(() => {
+            const volume = audio.volume - 0.1;
+            if (volume > 0) {
+                audio.volume = volume;
+            } else {
+                audio.pause();
+                clearInterval(fadeOutInterval);
+            }
+        }, 100);
+    }
 </script>
 
 </body>

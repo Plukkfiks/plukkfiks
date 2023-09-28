@@ -32,7 +32,6 @@ body {
 .articles-container .article {
     flex: 1;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Legg til gjennomsiktig bakgrunnsfarge */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,6 +62,12 @@ body {
     outline: none;
     box-shadow: 0 0 5px #8A2BE2;
 }
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
 
 
 .articles-section .article:hover {
