@@ -1,36 +1,15 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-
-.startup-animation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999; /* Sikrer at animasjonen er på toppen */
-}
-
 .startup-animation img {
     max-width: 100%;
+    height: auto;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-.startup-animation {
-    animation: fadeOut 5s forwards; /* Varighet: 5 sekunder, behold sluttstatus */
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
