@@ -2,35 +2,22 @@ body {
     background-image: url('https://media.giphy.com/media/3oz8xsUEU0gNcGr2Pm/source.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; /* Juster størrelsen slik at bildet dekker hele bakgrunnen */
-    /* ... (tidligere stiler) ... */
-}
-.articles-section .article {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
-    transition: box-shadow 0.3s; /* Legg til overgangseffekt for boks-skyggen */
-}
-
-footer .social-links li a {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Legg til en boks-skygge for glow-effekt */
-    /* Annen CSS-stil for a-elementet */
-}
-/* Animasjon for artikler */
-.articles-section .article:hover {
-    transform: scale(1.05); /* Skalér opp ved hover for 3D-effekt */
-    transition: transform 0.3s;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Juster høyden til viewport-høyde */
+    margin: 0;
 }
 
-/* Animasjon for sosiale medier */
-footer .social-links li a:hover {
-    transform: scale(1.1); /* Skalér opp ved hover for 3D-effekt */
-    transition: transform 0.3s;
-}
-.articles-section .article {
-    border: 1px solid #ffffff; /* Legg til en hvit ramme */
-    border-radius: 10px; /* Legg til hjørnerammer */
-    /* Annen CSS-stil for article-elementet */
-}
+/* ... (tidligere stiler) ... */
 
 footer {
-    border-top: 1px solid #ffffff; /* Legg til en hvit ramme øverst i footer */
+    background: none;
+    border: none;
+    text-align: center;
 }
+
+/* ... (tidligere stiler) ... */
